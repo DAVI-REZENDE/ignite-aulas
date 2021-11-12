@@ -21,5 +21,5 @@ This repository contains all courses/chapters completed by me in this cost
 </h3>
 
 <p align="center">
-  <img alt="Preview" src="https://github.com/DAVI-REZENDE/ignite-aulas/blob/main/assets/github_explorer_prev.png" />
+  <img alt="Preview" src="https://github.com/DAVI-REZENDE/ignite-aulas/blob/main/assets/dtmoney_prev.png" />
 </p>
