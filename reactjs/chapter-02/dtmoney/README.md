@@ -22,7 +22,7 @@ To run the project on your machine, open the terminal and run:
 yarn install
 yarn start
 # our
-npm intall
+npm install
 npm start
 
 ```
