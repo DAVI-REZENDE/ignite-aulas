@@ -11,7 +11,7 @@ export const Header = styled.View`
 
   background: ${({theme}) => theme.colors.primary};
 
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
 `;
 
@@ -35,7 +35,7 @@ export const SignInTitle = styled.Text`
   font-size: ${RFValue(16)}px;
 
   text-align: center;
-  margin: 80px 0;
+  /* margin: 80px 0; */
 `;
 
 export const Footer = styled.View`
