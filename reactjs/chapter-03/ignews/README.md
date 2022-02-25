@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ignews
+In this project I learned how to social login with Github, I learned how to use Next.js to your routing system, I learned how to use the stripe api to make payment within the application, I learned the server side render (SSR) and static site generator methods (SSG) with next, I learned to display the content of posts only to the user who signed the application, I used CMS Prismic and consumed its api to write the posts. All this in this project developed in the Rocketseat course!
+<p align="center">
+ <img src="https://raw.githubusercontent.com/DAVI-REZENDE/ignite-aulas/main/assets/ignews_prev.png" alt="Preview" />
+</p>
+
+## Technologies used in the project
+
+- Next.js
+- TypeScript
+- Axios
+- FaunaDB
+- Stripe
+- Prismic
+- Sass
 
 ## Getting Started
 
 First, run the development server:
 
 ```bash
+npm install
 npm run dev
 # or
+yarn install
 yarn dev
+```
+
+Configure your global variables:
+
+```bash
+# Stripe 
+STRIPE_API_KEY=1234
+NEXT_PUBLIC_STRIPE_PUBLIC_KEY=1234
+STRIPE_WEBHOOK_SECRET=1234
+STRIPE_SUCCESS_URL=http://localhost:3000/posts
+STRIPE_CANCEL_URL=http://localhost:3000/
+
+# Github
+GITHUB_CLIENT_ID=1234
+GITHUB_CLIENT_SECRET=1234
+
+# FaunaDB
+FAUNADB_KEY=234
+
+# Prismic
+PRISMIC_ACCESS_TOKEN=1234
+
+PRISMIC_ENDPOINT=https://yourproject-yourname.prismic.io/api/v2
+```
+
+Run stripe webhooks in your terminal:
+
+```bash
+stripe listen --forward-to http://localhost:3000/api/webhooks
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thanks🤙
