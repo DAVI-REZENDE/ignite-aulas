@@ -1,12 +1,28 @@
 {
   "transactions": [
     {
-      "id": 1,
-      "description": "Desenvolvimento de site",
-      "type": "income",
       "category": "Venda",
+      "createdAt": "2022-10-03T02:19:54.397Z",
+      "description": "Desenvolvimento de site",
+      "id": 1,
       "price": 14000,
-      "createdAt": "2022-10-03T02:19:54.397Z"
+      "type": "income"
+    },
+    {
+      "category": "Alimentação",
+      "createdAt": "2022-10-03T02:15:54.397Z",
+      "description": "Hamburguer",
+      "id": 2,
+      "price": 50,
+      "type": "outcome"
+    },
+    {
+      "category": "Venda",
+      "createdAt": "2022-10-03T02:15:54.397Z",
+      "description": "Criação de design pra app",
+      "id": 3,
+      "price": 50,
+      "type": "income"
     }
   ]
 }
